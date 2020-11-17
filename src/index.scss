@@ -2,6 +2,12 @@
 
 //set your brand colors
 $purple: #7200ff;
+$red: rgba(255, 74, 86, 1);
+
+body {
+  background-color: $red;
+  height: 100%;
+}
 
 //update bulma's global variables
 $primary: $purple;
