@@ -1,0 +1,66 @@
+$red: rgba(255, 74, 86, 1);
+$white: #fff;
+
+form {
+  margin: 40px 0px;
+
+  .field {
+    padding: 5px 0px;
+
+    label {
+      color: $red;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      font-size: 17px;
+      padding: 5px 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      background-color: none;
+      border: 1px solid $red;
+      line-height: 0;
+      font-size: 17px;
+      width: 100%;
+      display: block;
+      box-sizing: border-box;
+      padding: 10px 15px;
+      border-radius: 60px;
+      color: $red;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+
+      &:focus {
+        outline: none;
+        background: $red;
+        color: white;
+      }
+    }
+
+    button {
+      background-color: $red;
+      width: 100%;
+      border: 1px solid $red;
+      line-height: 0;
+      font-size: 17px;
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 20px 15px;
+      border-radius: 60px;
+      color: $white;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      position: relative;
+      z-index: 1;
+
+      &:hover,
+      &:focus {
+        color: $red;
+        background-color: $white;
+        cursor: pointer;
+        outline-width: 0px;
+      }
+    }
+  }
+}
