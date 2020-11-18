@@ -36,7 +36,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route
+        {/* <Route
           exact
           path="/"
           render={() =>
@@ -48,23 +48,19 @@ const App = () => {
               ),
               (<Redirect to="/home" />))
             ) : (
-              <Register />
-            )
-          }
-        />
-        <Route
-          path="/login"
-          render={() =>
-            state.isLogin ? (
-              (swal(
-                "Kamu sudah login!",
-                "halaman ini tidak bisa diakses",
-                "error"
-              ),
-              (<Redirect to="/home" />))
-            ) : (
               <Login />
             )
+          }
+        /> */}
+        <Route
+          exact
+          path="/"
+          render={() => (state.isLogin ? <Redirect to="/home" /> : <Login />)}
+        />
+        <Route
+          path="/register"
+          render={() =>
+            state.isLogin ? <Redirect to="/home" /> : <Register />
           }
         />
         <PrivateRoute path="/home" component={HomePage} />

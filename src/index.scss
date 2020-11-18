@@ -4,9 +4,13 @@
 $purple: #7200ff;
 $red: rgba(255, 74, 86, 1);
 
+html,
 body {
   background-color: $red;
   height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 //update bulma's global variables

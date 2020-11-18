@@ -1,6 +1,10 @@
+html,
 body {
   background-color: #ff4a56;
-  height: 100%; }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /*! bulma.io v0.9.1 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
