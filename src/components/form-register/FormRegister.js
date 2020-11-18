@@ -129,7 +129,7 @@ const FormRegister = () => {
         </div>
       </form>
       <h6 className="has-text-right mt-5">
-        Have an account? <Link to="/login">Login</Link>
+        Have an account? <Link to="/">Login</Link>
       </h6>
     </div>
   );

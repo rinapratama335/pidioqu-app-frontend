@@ -1,12 +1,10 @@
 import React, { useContext } from "react";
-import { UserContext } from "../../context/userContext";
-import { Route, Redirect } from "react-router-dom";
 import { BlockLoading } from "react-loadingg";
+import { Redirect, Route } from "react-router-dom";
+import { UserContext } from "../../context/userContext";
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const [state] = useContext(UserContext);
-
-  console.log("Data state private route:", state);
 
   return (
     <Route
